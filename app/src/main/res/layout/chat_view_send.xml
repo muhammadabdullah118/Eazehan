@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:padding="8dp">
+
+    <!-- Sender Name -->
+    <TextView
+        android:id="@+id/senderNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender Name"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:paddingBottom="4dp"/>
+
+    <!-- Message Text -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/teal_200">
+
+        <TextView
+            android:id="@+id/messageTextViewSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message text goes here"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Message Timestamp -->
+    <TextView
+        android:id="@+id/timestampTextViewSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingTop="4dp"/>
+
+</LinearLayout>

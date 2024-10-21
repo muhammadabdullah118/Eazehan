@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/btnHomeNavigation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/home_svgrepo_com"
+        app:layout_constraintEnd_toStartOf="@id/btnAppointmentNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnAppointmentNavigation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/appointment"
+        app:layout_constraintStart_toEndOf="@id/btnHomeNavigation"
+        app:layout_constraintEnd_toStartOf="@id/btnProfileNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnProfileNavigation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile_svgrepo_com"
+        app:layout_constraintStart_toEndOf="@id/btnAppointmentNavigation"
+        app:layout_constraintEnd_toStartOf="@id/btnHistoryNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnHistoryNavigation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/history_round_svgrepo_com"
+        app:layout_constraintStart_toEndOf="@id/btnProfileNavigation"
+        app:layout_constraintEnd_toStartOf="@id/btnSettingNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnSettingNavigation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/setting_2_svgrepo_com"
+        app:layout_constraintStart_toEndOf="@id/btnHistoryNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
